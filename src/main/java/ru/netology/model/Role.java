@@ -6,31 +6,30 @@ import org.hibernate.Hibernate;
 
 import java.util.Objects;
 
-@Entity
-@Getter
-@Setter
-@ToString
-@RequiredArgsConstructor
-
+@Data
 @AllArgsConstructor
-@Table(name = "Roles")
+@NoArgsConstructor
+@Entity
+@Builder
+@Table (name = "Roles")
+
 public class Role {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column (nullable = false,unique = true)
     private Long id;
+    @Column (nullable = false)
+    private String fileName;
+    @Column (nullable = false)
+    private String fileType;
+    @Column (nullable = false)
+    private String filePath;
+    @Column (nullable = false)
+    private byte [] fileSize;
 
-    private String role;
+    @ManyToOne
+    private User user;
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-        Role role = (Role) o;
-        return id != null && Objects.equals(id, role.id);
-    }
 
-    @Override
-    public int hashCode() {
-        return 0;
-    }
 }
