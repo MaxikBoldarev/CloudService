@@ -5,33 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b68f932a-0c2b-40d9-a00d-afed36ab43ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/auth/JwtAuthEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/auth/JwtFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/controller/CloudController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/exeption/RequestErrors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/exeption/ServerErrors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/model/JwtRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/model/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/service/CloudService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/utils/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CloudServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/RoleServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/entity/CloudFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/auth/JwtAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/exeption/Error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/exeption/ErrorsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/exeption/StorageException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/properties/CorsProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/providers/JwtProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/repository/CloudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/repository/CloudRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/repository/FileRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/repository/RoleRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/service/FileService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +37,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CloudServiceTest.executor": "Run",
+    "JUnit.RoleServiceTest.getFile.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -76,6 +57,55 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.UserServiceTest">
+    <configuration name="CloudServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CloudService" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CloudServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleServiceTest.getFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CloudService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.RoleServiceTest" />
+      <option name="METHOD_NAME" value="getFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CloudService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.RoleServiceTest.getFile" />
+        <item itemvalue="JUnit.CloudServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -92,7 +122,8 @@
       <option name="presentableId" value="Default" />
       <updated>1708793453451</updated>
       <workItem from="1708793454666" duration="4863000" />
-      <workItem from="1708964647844" duration="4134000" />
+      <workItem from="1708964647844" duration="4713000" />
+      <workItem from="1709026097345" duration="1734000" />
     </task>
     <servers />
   </component>
