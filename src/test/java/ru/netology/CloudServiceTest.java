@@ -1,4 +1,7 @@
+package ru.netology;
 
+
+import com.google.gson.Gson;
 import jakarta.servlet.ServletContext;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -11,7 +14,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.context.WebApplicationContext;
 import ru.netology.controller.CloudController;
 import ru.netology.model.JwtRequest;
-import com.google.gson.Gson;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;

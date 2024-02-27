@@ -25,7 +25,7 @@ public class User {
     private String password;
 
     @OneToMany(cascade = CascadeType.ALL)
-    List<File> userFiles;
+    List<Role> userFiles;
 
 
 }
