@@ -3,7 +3,6 @@ package ru.netology.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.io.File;
 import java.util.List;
 
 
@@ -25,7 +24,7 @@ public class User {
     private String password;
 
     @OneToMany(cascade = CascadeType.ALL)
-    List<Role> userFiles;
+    List<File> userFiles;
 
 
 }

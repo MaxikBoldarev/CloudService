@@ -1,0 +1,5 @@
+ru\netology\service\FileServiceTest.class
+ru\netology\service\UserServiceTest.class
+ru\netology\repository\AuthorizationRepositoryTest.class
+ru\netology\service\AuthServiceTest.class
+ru\netology\CloudServiceTest.class

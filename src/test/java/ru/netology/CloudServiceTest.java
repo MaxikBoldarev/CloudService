@@ -12,8 +12,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.context.WebApplicationContext;
-import ru.netology.controller.CloudController;
-import ru.netology.model.JwtRequest;
+import ru.netology.DTO.JwtRequest;
+import ru.netology.controller.FileController;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -66,7 +66,7 @@ class CloudServiceTest {
     void FilesControllerTest() {
         ServletContext servletContext = webApplicationContext.getServletContext();
         Assertions.assertNotNull(servletContext);
-        Assertions.assertNotNull(webApplicationContext.getBean(CloudController.class));
+        Assertions.assertNotNull(webApplicationContext.getBean(FileController.class));
     }
 
 }
